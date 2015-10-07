@@ -9,8 +9,4 @@
       apt: name=cuda update_cache=yes
 
     - name: write environmant variables to bash profile
-      shell: echo "export PATH=/usr/local/cuda-7.5/bin:\$PATH" >> ~/.bashrc
-      shell: echo "export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:\$LD_LIBRARY_PATH" >> ~/.bashrc
-
-    - name: reload bash profile
-      command: source ~/.bashrc
+      copy: src=./cuda.sh dest=/etc/profile.d/
