@@ -9,8 +9,12 @@ $ sudo pip install ansible
 ```
 
 ## ansible用いてCUDAに必要なパッケージをインストールする ##
-複数のサーバに対して操作を行う場合は `hosts` ファイルを用意して `-i` オプションで指定する。
 
 ```sh
 $ ansible-playbook cuda.yml
+```
+複数のサーバに対して操作を行う場合は `hosts` ファイルを用意して `-i` オプションで指定する。
+
+```sh
+$ ansible-playbook -i hosts cuda.yml
 ```
