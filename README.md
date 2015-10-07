@@ -10,6 +10,14 @@ $ sudo pip install ansible
 
 ## ansible用いてCUDAに必要なパッケージをインストールする ##
 
+gitでplaybookをローカルにクローンする。
+
+```sh
+$ git clone 
+```
+
+ansibleを実行し、必要なパッケージのインストールと設定を行う。
+
 ```sh
 $ ansible-playbook cuda.yml
 ```
