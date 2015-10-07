@@ -9,3 +9,7 @@ $ sudo pip install ansible
 ```
 
 ## ansible用いてCUDAに必要なパッケージをインストールする ##
+
+```sh
+$ ansible-playbook cuda.yml
+```
