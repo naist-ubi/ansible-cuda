@@ -35,7 +35,7 @@ ansible_sudo_pass=”パスワード”
 $ ansible-playbook -i hosts cuda.yml
 ```
 
-## sshの接続でエラーになる場合 ##
+### sshの接続でエラーになる場合 ###
 暗黙的に `~/.ssh/id_rsa.pub` のssh鍵を使用するためこれを `authorized_keys` に追加しておく必要があります。  
 鍵を作っていない場合はパスワードを聞かれ、入力すれば接続できるはずです。
 
