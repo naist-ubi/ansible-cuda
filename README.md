@@ -13,6 +13,7 @@ $ sudo pip install ansible
 gitでplaybookをローカルにクローンする。
 
 ```sh
+$ sudo apt-get install git
 $ git clone git@gist.github.com:6778b6545c41f0e8c774.git cuda
 $ cd cuda
 ```
