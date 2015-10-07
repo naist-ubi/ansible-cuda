@@ -4,5 +4,13 @@
   tasks:
     - name: register CUDA repository
       deb: http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/cuda-repo-ubuntu1404_7.5-18_amd64.deb
+
     - name: install CUDA
       apt: name=cuda update_cache=yes
+
+    - name: write environmant variables to bash profile
+      shell: echo "export PATH=/usr/local/cuda-7.5/bin:\$PATH" >> ~/.bashrc
+      shell: echo "export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:\$LD_LIBRARY_PATH" >> ~/.bashrc
+
+    - name: reload bash profile
+      command: source ~/.bashrc
