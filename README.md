@@ -10,7 +10,8 @@ $ sudo pip install ansible markupsafe
 
 ## ansible用いてCUDAに必要なパッケージをインストールする ##
 
-gitでplaybookをローカルにクローンする。
+gitでplaybookをローカルにクローンする。クローン先は構築するホストと別で構いません。
+したがって別ホストでansibleを実行する場合は設定対象ホストにgitをインストールする必要はありません。
 
 ```sh
 $ sudo apt-get install git
